@@ -42,4 +42,14 @@ public class Recipe {
         this.steps = steps;
         System.out.println("Recipe created");
     }
+
+    public void showIngredients(){
+        for(Ingredients ingredients: ingredients){
+            System.out.println(ingredients);
+        }
+
+        for (int i = 0; i < ingredients.size(); i++) {
+            System.out.println(i + "- " + ingredients.get(i));
+        }
+    }
 }
