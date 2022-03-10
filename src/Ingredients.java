@@ -38,6 +38,6 @@ public class Ingredients {
         this.name = name;
         this.esSalado = esSalado;
         this.peso = peso;
-        System.out.println("Ingrediente creado");
+        System.out.println("Ingredient created");
     }
 }
