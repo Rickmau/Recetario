@@ -10,6 +10,10 @@ public class Ingredients {
     private boolean esSalado;
     private double peso;
 
+    public Ingredients() {
+
+    }
+
     public String getName() {
         return name;
     }
