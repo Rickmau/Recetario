@@ -44,4 +44,9 @@ public class Ingredients {
         this.peso = peso;
         System.out.println("Ingredient created");
     }
+
+    public String toString() {
+        return name;
+    }
+
 }
