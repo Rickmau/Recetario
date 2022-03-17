@@ -112,7 +112,10 @@ public class main {
                     MyRecipeBook.ShowRecipeBook();
                     break;
             }
-        } while (answer == -1);
+        } while (answer != -1);
+
+        //
+
     }
 
 }

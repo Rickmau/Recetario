@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cfaa96b-e42c-4987-85a2-72dcd961d74b" name="Changes" comment="main almost finished">
+    <list default="true" id="0cfaa96b-e42c-4987-85a2-72dcd961d74b" name="Changes" comment="All classes finished">
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647453713093</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="All classes finished">
+      <created>1647539840265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647539840265</updated>
+    </task>
+    <task id="LOCAL-00007" summary="All classes finished">
+      <created>1647539889862</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647539889862</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +136,7 @@
     <MESSAGE value="Clase receta completa" />
     <MESSAGE value="for in recipe ad" />
     <MESSAGE value="main almost finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="main almost finished" />
+    <MESSAGE value="All classes finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="All classes finished" />
   </component>
 </project>
