@@ -9,6 +9,8 @@ public class main {
             1. Ad ingredient
             2. Ad recipe
             3. Consult recipeBook
+            4. Delete an ingredient
+            5. Delete a recipe
          */
 
         /*
@@ -56,10 +58,12 @@ public class main {
 
         do {
             //Show the options that the user has
-            System.out.println("Welcome, choose an option");
+            System.out.println("\nWelcome, choose an option");
             System.out.println("1. Add an ingredient");
             System.out.println("2. Add a new recipe");
             System.out.println("3. See my recipe book");
+            System.out.println("4. Erase an ingredient");
+            System.out.println("5. Erase a recipe");
             System.out.println("-1. Exit");
             answer = data.nextInt();
 
@@ -86,10 +90,12 @@ public class main {
                     System.out.println("Enter preparation time");
                     newRecipe.setPreparationTime(data.nextDouble());
                     System.out.println("Available Ingredients: ");
+
                     for (int i = 0; i < AvailableIngredients.size(); i++) {
                         System.out.println(i + 1 + ". " + AvailableIngredients.get(i).getName());
                     }
                     ArrayList<Ingredients> RecipeIngredients = new ArrayList<>();
+
                     System.out.println("Enter the number of the ingredient and if you don't want to add more just enter 0");
                     do {
                         if (answer != 0) {
@@ -97,6 +103,7 @@ public class main {
                         }
                     } while (answer != 0);
                     newRecipe.setIngredients(RecipeIngredients);
+
                     ArrayList<String> RecipeSteps = new ArrayList<>();
                     System.out.println("Enter the steps to follow and if you don't want to add more just enter 0");
                     String ans = "";
@@ -107,9 +114,34 @@ public class main {
                     } while (!ans.equals("0"));
                     newRecipe.setSteps(RecipeSteps);
                     MyRecipeBook.getRecipes().add(newRecipe);
+
                     break;
+
                 case 3:
                     MyRecipeBook.ShowRecipeBook();
+                    break;
+
+                case 4:
+                    System.out.println("\nEnter the number of the element you want to delete");
+                    for (int i = 0; i < AvailableIngredients.size(); i++) {
+                        System.out.println(i + 1 + ". " + AvailableIngredients.get(i).getName());
+                    }
+                    int elementToDelete = data.nextInt();
+                    AvailableIngredients.remove(elementToDelete-1);
+
+                    System.out.println("Ingredient deleted successfully");
+
+                    System.out.println("\nNew list of ingredients: ");
+                    for (int i = 0; i < AvailableIngredients.size(); i++) {
+                        System.out.println(i + 1 + ". " + AvailableIngredients.get(i).getName());
+                    }
+
+                    break;
+
+                case 5:
+                    System.out.println("Enter the number of the recipe you want to delete");
+                    MyRecipeBook.recipesMenu();
+
                     break;
             }
         } while (answer != -1);

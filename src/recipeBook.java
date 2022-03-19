@@ -51,4 +51,8 @@ public class recipeBook {
             recipe.ShowRecipe();
         }
     }
+
+    public void recipesMenu(){
+        System.out.println(Title);
+    }
 }

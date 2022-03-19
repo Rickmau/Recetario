@@ -42,7 +42,6 @@ public class Ingredients {
         this.name = name;
         this.esSalado = esSalado;
         this.peso = peso;
-        System.out.println("Ingredient created");
     }
 
     public String toString() {

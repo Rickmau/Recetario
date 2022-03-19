@@ -50,7 +50,6 @@ public class Recipe {
         this.preparationTime = preparationTime;
         this.ingredients = ingredients;
         this.steps = steps;
-        System.out.println("Recipe created");
     }
 
     public void ShowIngredients(){
